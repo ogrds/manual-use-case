@@ -2,8 +2,13 @@ import type { Metadata } from "next";
 import "@/styles/globals.css";
 
 export const metadata: Metadata = {
-  title: "Manual",
-  description: "manual.co",
+  title: "Manual Use Case Application",
+  description: "Manual use case application by: Gabriel Silva",
+  openGraph: {
+    type: "website",
+    url: "https://manual.co",
+    images: [{ url: "/images/banner.jpeg" }],
+  },
 };
 
 export default function RootLayout({
