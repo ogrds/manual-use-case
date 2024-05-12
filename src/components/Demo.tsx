@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 type DemoProps = {
   tag: string;
   bgIndex: number;
@@ -12,10 +14,12 @@ export function Demo({ bgIndex, title, description, image, tag }: DemoProps) {
       data-reverse={bgIndex % 2 === 0}
       className="w-full relative flex items-center justify-evenly gap-6 flex-col md:flex-row max-w-screen-lg p-4 my-0 mx-auto group md:data-[reverse=true]:flex-row-reverse"
     >
-      <img
+      <Image
+        width={370}
+        height={445}
         src={image}
         alt="Image01"
-        className="w-[370px] h-[445px] object-cover"
+        className="object-cover"
       />
 
       <div className="relative max-w-[372px]">

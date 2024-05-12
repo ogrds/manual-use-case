@@ -9,6 +9,7 @@ import Link from "next/link";
 import { Arrow } from "@/icons/Arrow";
 import { SmileySad } from "@/icons/SmileySad";
 import { Smiley } from "@/icons/Smiley";
+import Image from "next/image";
 
 type QuizProps = {
   handleClose: () => void;
@@ -64,7 +65,9 @@ export function Quiz({ handleClose }: QuizProps) {
   return (
     <div className="h-screen flex flex-col items-center">
       <nav className="w-full top-0 p-5 flex justify-between">
-        <img
+        <Image
+          width={40}
+          height={40}
           className="w-10 h-10 pointer-events-none self-center flex-auto"
           src="images/logo.svg"
           alt="Logo"

@@ -6,6 +6,7 @@ import { Quiz } from "@/components/Quiz";
 import { Facebook } from "@/icons/Facebook";
 import { Google } from "@/icons/Google";
 import { Twitter } from "@/icons/Twitter";
+import Image from "next/image";
 import { useState } from "react";
 
 export default function Home() {
@@ -17,7 +18,9 @@ export default function Home() {
     <div>
       <header className="bg-gradient xl:bg-banner bg-cover bg-no-repeat bg-[80%] sm:bg-[75%] lg:bg-right">
         <div className="relative flex items-center justify-center md:justify-start h-[calc(100vh-3rem)] md:max-w-7xl p-5 my-0 mx-auto">
-          <img
+          <Image
+            width={40}
+            height={40}
             className="absolute top-5 w-10 h-10"
             src="images/logo.svg"
             alt="Logo"
@@ -26,8 +29,8 @@ export default function Home() {
             <h1 className="text-text">Be good to yourself</h1>
 
             <p className="body-3 mt-5 text-text">
-              We're working around the clock to bring you a holistic approach to
-              your wellness. From top to bottom, inside and out.
+              {`We're working around the clock to bring you a holistic approach to
+              your wellness. From top to bottom, inside and out.`}
             </p>
 
             <button
@@ -49,25 +52,27 @@ export default function Home() {
         <div className="w-full flex flex-col gap-8 md:gap-[180px]">
           <Demo
             bgIndex={1}
-            image="images/demo-1.png"
-            tag="Hair loss"
-            title="Hair loss needn't be irreversible. We can help!"
-            description="We're working around the clock to bring you a holistic approach to your wellness. From top to bottom, inside and out."
+            image="/images/demo-1.png"
+            tag={`Hair loss`}
+            title={`Hair loss needn't be irreversible. We can help!`}
+            description={`We're working around the clock to bring you a holistic approach to your wellness. From top to bottom, inside and out.`}
           />
 
           <Demo
             bgIndex={2}
-            image="images/demo-2.png"
-            tag="Erecetile dysfunction"
-            title="Erections can be a tricky thing. But no need to feel down!"
-            description="We're working around the clock to bring you a holistic approach to your wellness. From top to bottom, inside and out."
+            image="/images/demo-2.png"
+            tag={`Erecetile dysfunction`}
+            title={`Erections can be a tricky thing. But no need to feel down!`}
+            description={`We're working around the clock to bring you a holistic approach to your wellness. From top to bottom, inside and out.`}
           />
         </div>
       </main>
 
       <footer className="bg-background-footer">
         <div className="flex gap-y-10 justify-between flex-col lg:flex-row max-w-7xl p-10 py-[4.563rem] mx-auto">
-          <img
+          <Image
+            width={75}
+            height={75}
             className="self-center lg:self-start"
             src="images/logo.svg"
             alt="Logo"
