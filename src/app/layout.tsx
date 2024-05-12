@@ -4,10 +4,11 @@ import "@/styles/globals.css";
 export const metadata: Metadata = {
   title: "Manual Use Case Application",
   description: "Manual use case application by: Gabriel Silva",
+  icons: "/images/logo.svg",
   openGraph: {
     type: "website",
     url: "https://manual.co",
-    images: [{ url: "/images/banner.jpeg" }],
+    images: "/images/banner.jpeg",
   },
 };
 
