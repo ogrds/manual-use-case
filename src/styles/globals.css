@@ -33,7 +33,7 @@
 
 @layer base {
   h1 {
-    @apply text-[5.625rem] leading-[5.625rem] tracking-[-0.03em];
+    @apply text-[5.313rem] sm:text-[5.625rem] leading-[5.313rem] sm:leading-[5.625rem] tracking-[-0.03em];
   }
 
   h3 {

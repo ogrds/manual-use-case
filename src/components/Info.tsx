@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-type DemoProps = {
+type InfoProps = {
   tag: string;
   bgIndex: number;
   title: string;
@@ -8,7 +8,7 @@ type DemoProps = {
   image: string;
 };
 
-export function Demo({ bgIndex, title, description, image, tag }: DemoProps) {
+export function Info({ bgIndex, title, description, image, tag }: InfoProps) {
   return (
     <div
       data-reverse={bgIndex % 2 === 0}

@@ -2,13 +2,11 @@ import type { Metadata } from "next";
 import "@/styles/globals.css";
 
 export const metadata: Metadata = {
-  title: "Manual Use Case Application",
-  description: "Manual use case application by: Gabriel Silva",
-  icons: "/images/logo.svg",
+  title: "Manual - Use Case Application",
+  description: "Use case application for Manual by: Gabriel Silva",
   openGraph: {
     type: "website",
     url: "https://manual.co",
-    images: ["/images/banner.jpeg"],
   },
 };
 

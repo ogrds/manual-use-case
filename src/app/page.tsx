@@ -1,12 +1,13 @@
 "use client";
 
-import { Demo } from "@/components/Demo";
+import { Info } from "@/components/Info";
 import { FooterSection } from "@/components/FooterSection";
 import { Quiz } from "@/components/Quiz";
 import { Facebook } from "@/icons/Facebook";
 import { Google } from "@/icons/Google";
 import { Twitter } from "@/icons/Twitter";
 import Image from "next/image";
+import Link from "next/link";
 import { useState } from "react";
 
 export default function Home() {
@@ -50,7 +51,7 @@ export default function Home() {
         </h3>
 
         <div className="w-full flex flex-col gap-8 md:gap-[180px]">
-          <Demo
+          <Info
             bgIndex={1}
             image="/images/demo-1.png"
             tag={`Hair loss`}
@@ -58,7 +59,7 @@ export default function Home() {
             description={`We're working around the clock to bring you a holistic approach to your wellness. From top to bottom, inside and out.`}
           />
 
-          <Demo
+          <Info
             bgIndex={2}
             image="/images/demo-2.png"
             tag={`Erecetile dysfunction`}
@@ -95,9 +96,15 @@ export default function Home() {
               <p className="heading-7 uppercase text-text">Follow Us</p>
 
               <span className="flex items-center gap-5">
-                <Facebook />
-                <Google />
-                <Twitter />
+                <Link href="#">
+                  <Facebook />
+                </Link>
+                <Link href="#">
+                  <Google />
+                </Link>
+                <Link href="#">
+                  <Twitter />
+                </Link>
               </span>
             </div>
           </div>
